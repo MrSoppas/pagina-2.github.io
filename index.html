@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HISTORIAS OCULTAS</title>
+    <link rel="stylesheet" href="logo.css">
+    <script src="contador.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>HISTORIAS OCULTAS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Subir fotos</h2>
+            <form action="upload_photo.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="photo">
+                <input type="submit" value="Subir foto">
+            </form>
+        </section>
+
+        <section>
+            <h2>Subir videos</h2>
+            <form action="upload_video.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="video">
+                <input type="submit" value="Subir video">
+            </form>
+        </section>
+
+        <section>
+            <h2>Escribir texto</h2>
+            <form action="upload_text.php" method="post">
+                <textarea name="text" rows="10" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Subir texto">
+            </form>
+        </section>
+        <p>Esta página ha sido vista <span id="contador"></span> veces.</p>
+    </main>
+
+</body>
+
+</html>
